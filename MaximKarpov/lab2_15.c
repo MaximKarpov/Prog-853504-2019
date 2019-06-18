@@ -234,7 +234,8 @@ int main(int argc, const char * argv[]) {
             int littleChoice;
             littleChoice=getInteger();
         
-            switch (littleChoice) { //реализация меню программы через switch case
+            switch (littleChoice)
+            { //реализация меню программы через switch case
                 case 1:
                      P1=getDate();
                     // Ввод данных по началу и завершению проекта с провкой на макаку
@@ -245,11 +246,13 @@ int main(int argc, const char * argv[]) {
                     // Ввод кол-ва программистов
                     break;
                case 3:
-                    if (P1.dayStart==0){
+                    if (P1.dayStart==0)
+                    {
                         printf("\nВы не ввели даты начала и окончания проекта! \n");
                         break;
                     }
-                    if (P1.programmers==0){
+                    if (P1.programmers==0)
+                    {
                         printf("\nВы не ввели кол-во работников!\n ");
                         break;
                     }
